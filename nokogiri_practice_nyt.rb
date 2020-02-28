@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'sinatra'
+gem "nokogiri", ">= 1.10.8"
 
 doc = Nokogiri::HTML(open 'http://nytimes.com')
 
